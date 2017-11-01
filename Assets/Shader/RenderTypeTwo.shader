@@ -40,7 +40,8 @@
 			fixed4 fragFunc(fragInput f):SV_Target{
 				float4 color = tex2D(_MainTex,f.uv);
 				fixed4 ambient = UNITY_LIGHTMODEL_AMBIENT;
-				fixed4 diffuse = _LightColor0*_DiffColor*color*saturate(dot(normalize(f.worldNormal),normalize(_WorldSpaceLightPos0)));
+				fixed4 diffuse = _LightColor0*_DiffColor*color*saturate(
+								dot(normalize(f.worldNormal),normalize(_WorldSpaceLightPos0)));
 				return ambient+diffuse;
 			}
 

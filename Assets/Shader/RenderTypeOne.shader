@@ -45,7 +45,8 @@
 				float2 uv_New = float2(uv_x,f.uv.y);
 				float4 color = tex2D(_MainTex,uv_New);
 				fixed4 ambient = UNITY_LIGHTMODEL_AMBIENT;
-				fixed4 diffuse = _LightColor0*_DiffColor*color*saturate(dot(normalize(f.worldNormal),normalize(_WorldSpaceLightPos0)));
+				fixed4 diffuse = _LightColor0*_DiffColor*color*saturate(
+								dot(normalize(f.worldNormal),normalize(_WorldSpaceLightPos0)));
 				fixed4 endColor = ambient+diffuse;
 				return fixed4(endColor.rgb,_Alpha);
 			}
