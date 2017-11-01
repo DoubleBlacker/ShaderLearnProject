@@ -12,6 +12,7 @@ Shader "LearnShader/DiffColor"{
 	}
 
 	SubShader{
+		//Tags{ "PreviewType" = "Skybox"} 
 		Pass{
 			
 			CGPROGRAM
