@@ -1,10 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\CamerRenderType.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Shader\StencilTestOne.shader">
     <Files>
       <File FileName="Assets\Shader\RenderTypeOne.shader" Line="49" Column="9" />
       <File FileName="Assets\Shader\RenderTypeTwo.shader" Line="44" Column="9" />
       <File FileName="Assets\Script\CamerRenderType.cs" Line="17" Column="76" />
+      <File FileName="Assets\Shader\Reflection.shader" Line="74" Column="30" />
+      <File FileName="Assets\Shader\DepthTest.shader" Line="21" Column="37" />
+      <File FileName="Assets\Script\DepthTest.cs" Line="5" Column="19" />
+      <File FileName="Assets\Shader\StencilTestOne.shader" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
