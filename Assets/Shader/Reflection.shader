@@ -137,19 +137,18 @@
 							float2(0.5, 0);
 
 				//计算噪波贴图的RG值，得到扭曲UV，
-				float2 waveOffset = (tex2D(_NoiseTex, tuv + float2(0, _Time.y * _SpeedY)).rg + tex2D(_NoiseTex, tuv + float2(_Time.y * _SpeedX, 0)).rg) - 1;
+				float2 waveOffset = (tex2D(_NoiseTex, tuv + float2(0, _Time.y * _SpeedY)).rg + 
+										tex2D(_NoiseTex, tuv + float2(_Time.y * _SpeedX, 0)).rg) - 1;
 				float2 ruv = float2(i.uv.x, 1 - i.uv.y) + waveOffset * _Indentity;
-
 				//使用扭曲UV对纹理采样
 				float4 c = tex2D (_MainTex, ruv);
-
 				//对淡入Alpha和淡出Alpha的插值
 				fixed fadeA = saturate((_AlphaFadeOut - ruv.y) / (_AlphaFadeOut - _AlphaFadeIn));
 				c = c * _Color * i.color * fadeA;
 				clip (c.a - 0.01);
 				return c;
 			}
-		ENDCG
+			ENDCG
 		}
 	}
 }
