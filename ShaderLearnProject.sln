@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShaderLearnProject", "Assembly-CSharp.csproj", "{EA404972-7D18-1DFD-4E4C-FA0E8CE1E539}"
 EndProject
+Project("{97B628D3-0EFE-A863-EA44-07F1923C872F}") = "ShaderLearnProject", "Assembly-UnityScript.unityproj", "{D51470BF-10EA-8140-7090-CA9C762BC6DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{EA404972-7D18-1DFD-4E4C-FA0E8CE1E539}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA404972-7D18-1DFD-4E4C-FA0E8CE1E539}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA404972-7D18-1DFD-4E4C-FA0E8CE1E539}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D51470BF-10EA-8140-7090-CA9C762BC6DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D51470BF-10EA-8140-7090-CA9C762BC6DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D51470BF-10EA-8140-7090-CA9C762BC6DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D51470BF-10EA-8140-7090-CA9C762BC6DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

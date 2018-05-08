@@ -64,8 +64,6 @@ Shader "LearnShader/GLSL/GLSLTest"{
 			   
 			   vec2 center = vec2(texSize/2.);
 
-			// ----------------------------------------------------
-
 			   float maxV = dot(center, center);
 			   float minV = floor(maxV*(1. - size));
 			   float diff = maxV - minV;
